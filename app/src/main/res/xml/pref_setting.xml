@@ -1,0 +1,54 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="row"
+        android:title="Personalize">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="notify"
+            android:title="@string/notify" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="row1"
+        android:title="@string/info">
+
+        <Preference
+            android:key="terms"
+            android:title="@string/term" />
+
+        <Preference
+            android:key="policy"
+            android:title="@string/privacy" />
+
+        <Preference
+            android:key="about"
+            android:title="@string/about"/>
+
+        <Preference android:key="ver"
+            android:title=""/>
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:key="row2"
+        android:title="@string/feed">
+
+
+
+        <Preference
+            android:fragment="com.shuan.myland.setting.ContactUs"
+            android:key="contact"
+            android:title="@string/contact" />
+
+        <Preference
+            android:key="share"
+            android:title="@string/share"/>
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

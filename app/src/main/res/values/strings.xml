@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">MyLandBank</string>
+
+    <string-array name="pro_view">
+        <item>Overview</item>
+        <!--<item>Facilities</item>
+        <item>Locality</item>-->
+    </string-array>
+
+    <string name="api_key">AIzaSyCf8eIu3M_mwZTGrdKjdjHRTLMylZ3C4Ec</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="demo_min_label">Min</string>
+    <string name="demo_max_label">Max</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">close</string>
+
+    <string-array name="menu">
+        <item>Home</item>
+        <item>New Projects</item>
+        <!--<item>Rent</item>-->
+        <item>Upcoming Projects</item>
+        <item>Explore Localities</item>
+        <item>Property News</item>
+        <item>Setting</item>
+    </string-array>
+
+    <string name="Rs">\u20B9</string>
+
+    <string-array name="facilities">
+        <item>Institution</item>
+        <item>Railway station</item>
+        <item>Bus stand</item>
+        <item>Hospital</item>
+        <item>Bank/ATM</item>
+        <item>Shopping Mall</item>
+        <item>Theatre</item>
+    </string-array>
+
+
+    <string-array name="home_activities">
+        <item>FAB &amp; Toolbar Animation</item>
+        <item>Transparent Toolbar Test</item>
+        <item>Navigation Drawer</item>
+        <item>Toolbar Animation with Image</item>
+        <item>Material Style Tabs</item>
+        <item>Card View Toolbar</item>
+        <item>Quick Return Pattern</item>
+        <item>Reveal Animation</item>
+        <item>Gmail Style List with Bottom Sheet</item>
+        <item>Introductory View Pager</item>
+
+
+    </string-array>
+
+    <string-array name="home_activities_subtitle">
+        <item>G+ like on scroll hide animation</item>
+        <item>Overlaid transparent Toolbar</item>
+        <item>Material Design drawer with scrim</item>
+        <item>Using the new Support Design Library</item>
+        <item>Tab strip with Design Support Lib</item>
+        <item>Nested Toolbar in card</item>
+        <item>UI Pattern using Design Support Lib</item>
+        <item>Circular Reveal for pre Lollipop</item>
+        <item>Colored list icons with Bottom Sheets Google Maps style</item>
+        <item>Google style product tour</item>
+
+    </string-array>
+
+        <string name="about_us">My Land Bank is one fast rising star in the real estate sector incorporating fresh thinking and creativity, in tune with the times. Today, we have a solid customer base of over 4,000 satisfied customers which is on a rapidly growing momentum.\n\n
+            Strategic location selection, conduct of due diligence to ensure clear title, assessment of value, excellent development and astute pricing have ensured that the value of our projects have delivered 50-100% growth for many of our customers within relatively short periods (1 to 2 years). All our townships have excellent amenities and layout with Tar roads, Boundary wall to the layout, Security gate, Street lights, Landscaping, Children’s play area and much more.\n\n
+            Each project is nurtured with care – converting virgin lands to desirable living spaces. Our projects are defined by low initial costs for customers/investors. This makes it possible for locals to access projects for homes and NRI’s to buy relatively larger plots for investments. Since the rate of growth of our projects is higher than those in developed spaces like metros, we have delivered excellent ROI.\n\n
+            In an industry sullied by developers who failed to deliver and had under-delivered, My Land Bank has proved its worth by under-promising and over-delivering. From top management to the lowest staff cadre believes in walking the talk and keeping promises. This is the culture inculcated and nurtured at My Land Bank.\n\n
+            It is believed that in Kerala, with its high density of population, land, is perhaps the scarcest commodity. Value of land in Kerala has witnessed continuous appreciation all through the years except in a brief period during the late 70’s when there was rampant over-speculation. My Land Bank is built on strong foundations and led by experts from the real estate and construction sectors. Our professional marketing network and bevy of satisfied customers makes it possible to ensure liquidity of property within short periods.\n\n
+            Prime Lands, is our marketing division. It has created a core group of dedicated professionals working towards real estate sales. In effect, we have professionalized our marketing activity with structured and defined purposes and targets.\n\n
+            VISION\n
+            “Make people Proud, Secure and Smile"\n\n* Respect for the individual\n\n* Service to the customers above everything else\n\n* Encourage new and innovative ideas\n\n* R &amp; D as a continuum\n\n* Accountability\n
+        </string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="notify">Push Notification</string>
+    <string name="info">Information &amp; Support</string>
+    <string name="term">Terms &amp; Condition</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="about">About Us</string>
+    <string name="feed">Feedback</string>
+    <string name="contact">Contact Us</string>
+    <string name="share">Share the App</string>
+    <string name="app_url">https://play.google.com/store/apps/details?id=com.shuan.mlb</string>
+
+    <string name="palakkadAddr">Pazheri Properties &amp; Developers PVT.LTD.\nILLAM Heritage Apartment,\nAkathethara,Shastanagar,Palakkad.</string>
+    <string name="palakkadland">+91-491-2106111</string>
+    <string name="palakkadph">""</string>
+    <string name="palakkadfax">""</string>
+    <string name="mannarkkadAddr">Pazheri Properties &amp; Developers PVT.LTD.\nPazheri plaza, Kodathipadi, Mannarkkad.</string>
+    <string name="mannarkkadland">+91-4924-226636</string>
+    <string name="mannarkkadph">""</string>
+    <string name="mannarkkadfax">""</string>
+    <string name="periAddr">Pazheri Properties &amp; Developers PVT.LTD.\nSite Office, Pazheri Heritage appartment,\nNear Panchami School, Perinthalmanna.</string>
+    <string name="periland">""</string>
+    <string name="periph">91- 9249431111</string>
+    <string name="perifax">""</string>
+
+
+    <string name="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu dapibus ligula. Etiam ex magna, fermentum sed augue sit amet, porttitor dictum magna. Donec auctor ultricies diam sed luctus. Ut laoreet nunc nec nunc egestas dictum. Sed ultrices, ligula et interdum pharetra, nibh justo feugiat arcu, nec luctus dui urna vitae elit. Nulla facilisi. Integer sit amet placerat sapien. Vivamus vitae est imperdiet, sollicitudin enim ac, sagittis diam. Maecenas malesuada ligula at quam finibus sollicitudin. Maecenas nec libero a dolor faucibus sodales non et sapien. Etiam ornare rhoncus nulla, quis porttitor nisi rhoncus id. Phasellus laoreet luctus sem at lobortis. Sed risus orci, porttitor iaculis diam at, lobortis vulputate libero. Quisque porta in sem vitae tincidunt. Mauris neque sapien, lacinia sed tortor id, placerat venenatis nibh. Donec aliquet odio felis, et tincidunt arcu interdum eget.
+
+Donec auctor auctor volutpat. Nam quis ipsum ac velit molestie molestie. Integer pharetra justo posuere imperdiet vestibulum. Vivamus non diam aliquam, euismod nisl vel, aliquet mi. Quisque eget nisl a risus auctor euismod iaculis nec nunc. Nam vitae sem ut arcu vulputate aliquet sit amet vitae mi. Sed non nisl at purus pharetra accumsan. Morbi eu neque eu lectus tempor hendrerit non vitae dolor. Aliquam porttitor quis libero eu euismod. Integer fringilla efficitur imperdiet. Nam arcu ante, maximus at dolor id, congue pharetra libero. Maecenas dictum enim id consectetur placerat. Sed congue sit amet ex non viverra.
+
+Suspendisse vitae tortor eget urna bibendum vulputate. Maecenas fringilla laoreet arcu, vitae ultrices urna tempor in. Vivamus vel porta turpis. Pellentesque dapibus fringilla dignissim. In dapibus, neque eget ornare sollicitudin, magna lectus auctor lectus, pellentesque ultricies tellus dui eget velit. Pellentesque et pellentesque lacus, et tincidunt ante. Sed suscipit est sed tempus suscipit. Vivamus ultricies ornare nisi, in hendrerit urna malesuada quis. Aliquam tincidunt congue diam, a commodo nunc pulvinar eget. Cras vestibulum, lacus ac dapibus tempus, augue ex imperdiet magna, eget ornare mi massa sit amet felis. In nibh mi, rutrum eget libero eu, varius facilisis mi. Ut sapien diam, convallis sed dui a, faucibus efficitur tortor.
+
+Morbi consectetur ullamcorper mauris, id pretium augue tincidunt a. Nam nec dapibus augue, sit amet vulputate nunc. Nulla at consectetur elit, id ornare lacus. Proin lectus massa, pharetra in dapibus vitae, porttitor eget tortor. Aenean auctor tortor at tortor commodo mollis. Pellentesque a blandit eros. Nullam viverra, tortor at semper euismod, lorem sapien sodales leo, id cursus dolor augue id lorem.
+
+Maecenas egestas condimentum erat vitae lacinia. Etiam rhoncus ultricies leo, et volutpat nulla. Morbi fermentum, odio non lobortis feugiat, mauris urna lobortis turpis, sit amet cursus ipsum tellus eu sem. Etiam pharetra pretium massa, vel mattis sem interdum luctus. Curabitur ligula leo, vehicula eu convallis eget, sagittis in sem. Nunc ac lacinia dui. Nulla mi ipsum, molestie sollicitudin mi id, vulputate pellentesque lorem. Vestibulum porta consequat leo, vitae fermentum est blandit nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse ut nisl volutpat nunc placerat blandit non quis purus. Suspendisse neque ex, consequat at egestas in, ullamcorper sed orci. Maecenas tincidunt tristique diam. Fusce iaculis quis sapien vel molestie. Curabitur viverra tortor a facilisis facilisis. Aenean et pellentesque sem. Quisque lacinia velit ac viverra imperdiet.</string>
+
+
+</resources>
+
+

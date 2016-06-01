@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/back" />
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.80"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="2dp"
+            fancy:fb_defaultColor="#000"
+            fancy:fb_focusColor="#000"
+            fancy:fb_radius="4dp"
+            fancy:fb_text="New Projects"
+            fancy:fb_textColor="#FFFFFF" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/upcoming_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:alpha="0.80"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="2dp"
+            fancy:fb_defaultColor="#000"
+            fancy:fb_focusColor="#000"
+            fancy:fb_radius="4dp"
+            fancy:fb_text="Upcoming Projects"
+            fancy:fb_textColor="#FFFFFF" />
+
+        <!-- <mehdi.sakout.fancybuttons.FancyButton
+             android:id="@+id/rent"
+             android:layout_width="150dp"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="8dp"
+             android:alpha="0.80"
+             android:paddingBottom="10dp"
+             android:paddingLeft="20dp"
+             android:paddingRight="20dp"
+             android:paddingTop="10dp"
+             fancy:fb_borderColor="#FFFFFF"
+             fancy:fb_borderWidth="2dp"
+             fancy:fb_defaultColor="#000"
+             fancy:fb_focusColor="#000"
+             fancy:fb_radius="4dp"
+             fancy:fb_text="Rent"
+             fancy:fb_textColor="#FFFFFF" />-->
+    </LinearLayout>
+
+
+    <!-- <LinearLayout
+         android:id="@+id/row2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/row1"
+         android:layout_centerVertical="true"
+         android:layout_margin="@dimen/activity_horizontal_margin"
+         android:orientation="horizontal"
+         android:gravity="center">
+
+         <mehdi.sakout.fancybuttons.FancyButton
+             android:id="@+id/new_project"
+             android:layout_width="150dp"
+             android:layout_height="wrap_content"
+             android:alpha="0.80"
+             android:paddingBottom="10dp"
+             android:paddingLeft="20dp"
+             android:paddingRight="20dp"
+             android:paddingTop="10dp"
+             fancy:fb_borderColor="#FFFFFF"
+             fancy:fb_borderWidth="2dp"
+             fancy:fb_defaultColor="#000"
+             fancy:fb_focusColor="#000"
+             fancy:fb_radius="4dp"
+             fancy:fb_text="New Projects"
+             fancy:fb_textColor="#FFFFFF" />
+
+
+     </LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.9"
+        android:background="#000"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Activity"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_below="@+id/row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="8dp">
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="0"
+                    android:layout_centerInParent="true"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ic_round"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Seen \nProperties"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginLeft="8dp">
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="0"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ic_round"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shortlisted \nProperties"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

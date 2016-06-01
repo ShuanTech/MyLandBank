@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shuan.myland">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.shuan.myland.utils.Common"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.shuan.myland.launcher.LauncherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toobar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shuan.myland.Main"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toobar" />
+        <activity
+            android:name="com.shuan.myland.property.PropertyView"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toobar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shuan.myland.search.PropertySearchResultActivity" />
+        </activity>
+        <activity
+            android:name="com.shuan.myland.search.PropertySearchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toobar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shuan.myland.Main" />
+        </activity>
+        <activity
+            android:name="com.shuan.myland.search.PropertySearchResultActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toobar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shuan.myland.search.PropertySearchActivity" />
+        </activity>
+        <activity
+            android:name="com.shuan.myland.activities.FacilitiesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toobar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shuan.myland.property.PropertyView" />
+        </activity>
+        <activity
+            android:name="com.shuan.myland.activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toobar" />
+        <activity
+            android:name="com.shuan.myland.activities.BookingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toobar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shuan.myland.property.PropertyView" />
+        </activity>
+        <activity
+            android:name="com.shuan.myland.activities.NewsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toobar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shuan.myland.Main" />
+        </activity>
+        <activity
+            android:name="com.shuan.myland.activities.NewsReadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toobar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shuan.myland.activities.NewsActivity" />
+        </activity>
+        <activity
+            android:name="com.shuan.myland.setting.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shuan.myland.Main" />
+        </activity>
+        <activity
+            android:name="com.shuan.myland.setting.ContactUs"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toobar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shuan.myland.setting.SettingsActivity" />
+        </activity>
+        <activity
+            android:name="com.shuan.myland.activities.GalleryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toobar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shuan.myland.property.PropertyView" />
+        </activity>
+        <activity
+            android:name="com.shuan.myland.activities.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toobar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shuan.myland.Main" />
+        </activity>
+        <activity
+            android:name="com.shuan.myland.activities.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toobar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shuan.myland.activities.ProfileActivity" />
+        </activity>
+        <activity
+            android:name="com.shuan.myland.search.ProjectSearchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toobar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shuan.myland.Main" />
+        </activity>
+        <activity
+            android:name="com.shuan.myland.search.ProjectSearchResultActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toobar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shuan.myland.Main" />
+        </activity>
+        <activity
+            android:name="com.shuan.myland.property.ProjectView"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toobar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shuan.myland.search.ProjectSearchActivity" />
+        </activity>
+        <activity
+            android:name="com.shuan.myland.property.NewProjectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toobar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shuan.myland.Main" />
+        </activity>
+        <activity
+            android:name="com.shuan.myland.activities.AmentiesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toobar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shuan.myland.property.ProjectView" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shuan.myland.activities.NewsReadActivity">
+
+    <com.shuan.myland.scrollView.ObservableScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/news_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/parallax_image_height"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/news_img">
+
+                <RelativeLayout
+                    android:id="@+id/row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+                    <TextView
+                        android:id="@+id/news_head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heading"
+                        android:textColor="#000" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/row1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/row"
+                    android:layout_margin="8dp">
+
+                    <TextView
+                        android:id="@+id/news_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heading"
+                        android:textColor="#000" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/row2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/row1"
+                    android:layout_margin="8dp">
+
+                    <TextView
+                        android:id="@+id/news_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Heading"
+                        android:textColor="#000" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </com.shuan.myland.scrollView.ObservableScrollView>
+
+
+    <include layout="@layout/gradient_header" />
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+</FrameLayout>

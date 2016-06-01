@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shuan.myland.activities.EditProfileActivity">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:theme="@style/SecondaryTheme" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar"
+        android:scrollbars="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/row"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/colorPrimary">
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user_img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/user"
+                        app:civ_border_color="#FFF"
+                        app:civ_border_width="2dp" />
+
+                    <ImageButton
+                        android:id="@+id/edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/circle"
+                        android:src="@drawable/ic_edit" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/row"
+                android:layout_margin="@dimen/activity_horizontal_margin">
+
+                <EditText
+                    android:id="@+id/usr_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"/>
+
+                <EditText
+                    android:id="@+id/ph_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/usr_name"
+                    android:layout_marginTop="8dp"
+                    android:hint="Phone Number"
+                    android:singleLine="true"
+                    android:maxLength="15"/>
+
+                <EditText
+                    android:id="@+id/email_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ph_no"
+                    android:layout_marginTop="8dp"
+                    android:hint="Email Id"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/addr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email_id"
+                    android:hint="Address"
+                    android:layout_marginTop="8dp"
+                    android:imeOptions="actionDone"/>
+
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/submit"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addr"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    fancy:fb_borderColor="#FFFFFF"
+                    fancy:fb_borderWidth="2dp"
+                    fancy:fb_defaultColor="@color/colorAccent"
+                    fancy:fb_focusColor="@color/colorAccent"
+                    fancy:fb_radius="4dp"
+                    fancy:fb_text="Submit"
+                    fancy:fb_textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/row1"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/white">
+
+
+                <RelativeLayout
+                    android:id="@+id/col1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change Password"
+                        android:textColor="#000"
+                        android:layout_marginLeft="8dp"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/col2"
+                    android:layout_below="@+id/col1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/old_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Old Password"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/new_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/old_pass"
+                        android:layout_marginTop="8dp"
+                        android:hint="New Password"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/confrm_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/new_pass"
+                        android:layout_marginTop="8dp"
+                        android:hint="Conform Password"
+                        android:singleLine="true"/>
+
+
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        android:id="@+id/update"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/confrm_pass"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        fancy:fb_borderColor="#FFFFFF"
+                        fancy:fb_borderWidth="2dp"
+                        fancy:fb_defaultColor="@color/colorAccent"
+                        fancy:fb_focusColor="@color/colorAccent"
+                        fancy:fb_radius="4dp"
+                        fancy:fb_text="Update"
+                        fancy:fb_textColor="#FFFFFF"
+                        android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

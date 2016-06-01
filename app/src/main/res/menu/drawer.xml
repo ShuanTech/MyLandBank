@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:checked="true"
+            android:icon="@drawable/ic_drawer_home"
+            android:title="Home" />
+
+
+        <item android:id="@+id/project"
+            android:icon="@drawable/ic_drawer_projects"
+            android:title="Projects"/>
+
+        <item
+            android:id="@+id/new_project"
+            android:icon="@drawable/ic_drawer_projects"
+            android:title="New Projects" />
+
+        <item
+            android:id="@+id/upcoming_project"
+            android:icon="@drawable/ic_drawer_projects"
+            android:title="Upcoming Projects" />
+
+        <!--<item
+            android:id="@+id/localities"
+            android:icon="@drawable/ic_drawer_localities"
+            android:title="Explore Localities" />-->
+        <item
+            android:id="@+id/project_news"
+            android:icon="@drawable/ic_drawer_news"
+            android:title="Property News" />
+
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_drawer_settings"
+            android:title="Setting" />
+
+    </group>
+
+
+</menu>

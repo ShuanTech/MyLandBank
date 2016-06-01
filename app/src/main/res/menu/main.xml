@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/abc_ic_search_api_mtrl_alpha"
+        android:title="search"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/overflow"
+        android:title="Overflow"
+        android:icon="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/profile"
+                android:orderInCategory="100"
+                android:title="Profile"
+                android:icon="@drawable/ic_user">
+
+            </item>
+
+        </menu>
+
+    </item>
+
+
+    <!--<item
+        android:id="@+id/house"
+        android:orderInCategory="101"
+        android:title="House/Villa"
+        app:showAsAction="never" />
+
+
+     <item
+         android:id="@+id/plot"
+         android:orderInCategory="102"
+         android:title="Plot"
+         app:showAsAction="never" />
+
+
+     <item
+         android:id="@+id/farms"
+         android:orderInCategory="104"
+         android:title="Farms"
+         app:showAsAction="never" />-->
+</menu>

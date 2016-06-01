@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8BC34A</color>
+    <color name="colorPrimaryDark">#689F38</color>
+    <color name="colorAccent">#3F51B5</color>
+
+    <color name="blue">#303F9F</color>
+    <color name="green">#4CAF50</color>
+    <color name="green_teal">#009688</color>
+    <color name="purple">#673AB7</color>
+    <color name="red">#F44336</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="lime">#CDDC39</color>
+
+    <color name="statusBarColor">@color/colorPrimaryDark</color>
+    <color name="navigationBarColor">@android:color/black</color>
+    <color name="drawerArrowColor">@android:color/white</color>
+
+    <color name="psts_background_tab_pressed">#1AFFFFFF</color>
+    <color name="psts_background_tab_pressed_ripple">#AAFFFFFF</color>
+    <color name="text_enabled">#FFFFFFFF</color>
+    <color name="text_disabled">#4DFFFFFF</color>
+
+    <color name="silver">#C0C0C0</color>
+    <color name="gold">#FFD700</color>
+    <color name="platinum">#e5e4e2</color>
+
+</resources>

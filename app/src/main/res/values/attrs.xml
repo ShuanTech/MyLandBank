@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="scv_CropImageView">
+        <attr name="scv_img_src" format="reference" />
+        <attr name="scv_crop_mode">
+            <enum name="fit_image" value="0"/>
+            <enum name="ratio_4_3" value="1"/>
+            <enum name="ratio_3_4" value="2"/>
+            <enum name="square" value="3"/>
+            <enum name="ratio_16_9" value="4"/>
+            <enum name="ratio_9_16" value="5"/>
+            <enum name="free" value="6"/>
+            <enum name="custom" value="7"/>
+            <enum name="circle" value="8"/>
+            <enum name="circle_square" value="9"/>
+        </attr>
+        <attr name="scv_background_color" format="reference|color"/>
+        <attr name="scv_overlay_color" format="reference|color"/>
+        <attr name="scv_frame_color" format="reference|color"/>
+        <attr name="scv_handle_color" format="reference|color"/>
+        <attr name="scv_guide_color" format="reference|color"/>
+        <attr name="scv_guide_show_mode">
+            <enum name="show_always" value="1"/>
+            <enum name="show_on_touch" value="2"/>
+            <enum name="not_show" value="3"/>
+        </attr>
+        <attr name="scv_handle_show_mode">
+            <enum name="show_always" value="1"/>
+            <enum name="show_on_touch" value="2"/>
+            <enum name="not_show" value="3"/>
+        </attr>
+        <attr name="scv_handle_size" format="dimension"/>
+        <attr name="scv_touch_padding" format="dimension"/>
+        <attr name="scv_min_frame_size" format="dimension"/>
+        <attr name="scv_frame_stroke_weight" format="dimension"/>
+        <attr name="scv_guide_stroke_weight" format="dimension"/>
+        <attr name="scv_crop_enabled" format="boolean"/>
+        <attr name="scv_initial_frame_scale" format="float"/>
+        <attr name="scv_animation_enabled" format="boolean"/>
+        <attr name="scv_animation_duration" format="integer"/>
+        <attr name="scv_handle_shadow_enabled" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="RangeBar">
+        <attr name="tickCount" format="integer" />
+        <attr name="tickHeight" format="dimension" />
+        <attr name="barWeight" format="dimension" />
+        <attr name="barColor" format="reference|color" />
+        <attr name="connectingLineWeight" format="dimension" />
+        <attr name="connectingLineColor" format="reference|color" />
+        <attr name="thumbRadius" format="dimension" />
+        <attr name="thumbImageNormal" format="reference" />
+        <attr name="thumbImagePressed" format="reference" />
+        <attr name="thumbColorNormal" format="reference|color"/>
+        <attr name="thumbColorPressed" format="reference|color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="SmartTab">
+        <attr name="indicatorAlwaysCenter" format="boolean"/>
+        <attr name="indicatorWithoutPadding" format="boolean"/>
+        <attr name="indicatorInFront" format="boolean"/>
+        <attr name="indicatorDistributeEvenly" format="boolean"/>
+        <attr name="indicatorInterpolation" format="enum">
+            <enum name="smart" value="0"/>
+            <enum name="linear" value="1"/>
+        </attr>
+        <attr name="indicatorGravity" format="enum">
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="center" value="2"/>
+        </attr>
+        <attr name="indicatorColor" format="color"/>
+        <attr name="indicatorColors" format="reference"/>
+        <attr name="indicatorThickness" format="dimension"/>
+        <attr name="indicatorCornerRadius" format="dimension"/>
+        <attr name="overlineColor" format="color"/>
+        <attr name="overlineThickness" format="dimension"/>
+        <attr name="underlineColor" format="color"/>
+        <attr name="underlineThickness" format="dimension"/>
+        <attr name="dividerColor" format="color"/>
+        <attr name="dividerColors" format="reference"/>
+        <attr name="dividerThickness" format="dimension"/>
+        <attr name="defaultTabBackground" format="reference"/>
+        <attr name="tabAllCaps" format="boolean"/>
+        <attr name="defaultTabTextColor" format="color|reference"/>
+        <attr name="tabTextSize" format="dimension"/>
+        <attr name="tabTextHorizontalPadding" format="dimension"/>
+        <attr name="tabTextMinWidth" format="dimension"/>
+        <attr name="customTabLayoutId" format="reference"/>
+        <attr name="customTabTextViewId" format="reference"/>
+        <attr name="clickable" format="boolean"/>
+
+
+    </declare-styleable>
+
+
+</resources>
